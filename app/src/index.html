@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif
+  }
+
+  .w3-bar,
+  h1,
+  button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
+</style>
+
+<style>
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+
+
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+
+    form {
+      max-width: 480px;
+    }
+
+  }
+</style>
+
+<script>
+  function showRegister() {
+    document.getElementById("register").hidden = false
+    document.getElementById("login").hidden = true
+    document.getElementById("home").hidden = true
+  }
+</script>
+
+<body style="overflow: hidden;">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="register.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" style="float: right;"
+        >Register</a>
+      <a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" style="float: right;"
+        >Login</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Login</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Register</a>
+    </div>
+  </div>
+
+  <div id="home" style="overflow-y: hidden;">
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">Bhivpa's Online Voting System</h1>
+      <p class="w3-xlarge">A simple yet secure approach to voting</p>
+      <a href="register.html"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get
+        Started</button></a>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-32 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1>Online Voting System</h1>
+          <h5 class="w3-padding-32">This voting system was designed and implemented by Arya Bhivpathaki</h5>
+
+          <p class="w3-text-grey">This project uses Truffle in background, uses webpack and typescript for development.
+            In the front end
+            we have Metamask and Ganache runs the block chain.
+          </p>
+        </div>
+
+        <div class="w3-third w3-center">
+          <i class="fa fa-address-card w3-padding-16 w3-text-red" aria-hidden="true" style="font-size: 200px;"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 w3-center w3-opacity">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+  </div>
+
+
+  <div id="register" style="padding-top: 5%;" hidden>
+    <form>
+
+      <h1>Register</h1>
+
+      <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">ID Proof</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label>Age:</label>
+        <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under
+          18</label><br>
+        <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 or
+          older</label>
+      </fieldset>
+      <button type="submit" class="w3-button w3-red w3-padding-large w3-medium w3-margin-top">Register</button>
+    </form>
+  </div>
+
+  <div id="login" style="padding-top: 5%;" hidden>
+    <form>
+
+      <h1>Sign Up</h1>
+
+      <fieldset>
+        <legend><span class="number">1</span>Your basic info</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password">
+
+        <label>Age:</label>
+        <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under
+          13</label><br>
+        <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or
+          older</label>
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="number">2</span>Your profile</legend>
+        <label for="bio">Biography:</label>
+        <textarea id="bio" name="user_bio"></textarea>
+      </fieldset>
+      <fieldset>
+        <label for="job">Job Role:</label>
+        <select id="job" name="user_job">
+          <optgroup label="Web">
+            <option value="frontend_developer">Front-End Developer</option>
+            <option value="php_developor">PHP Developer</option>
+            <option value="python_developer">Python Developer</option>
+            <option value="rails_developer"> Rails Developer</option>
+            <option value="web_designer">Web Designer</option>
+            <option value="WordPress_developer">WordPress Developer</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="Android_developer">Androild Developer</option>
+            <option value="iOS_developer">iOS Developer</option>
+            <option value="mobile_designer">Mobile Designer</option>
+          </optgroup>
+          <optgroup label="Business">
+            <option value="business_owner">Business Owner</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+        </select>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light"
+          for="development">Development</label><br>
+        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
+          for="design">Design</label><br>
+        <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light"
+          for="business">Business</label>
+
+      </fieldset>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+
+
+
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
